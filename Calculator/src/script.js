@@ -18,7 +18,12 @@ btns.forEach(btn=>{
         }
         else if(val=='=')
         {
+            try{
             str=eval(str).toString();
+            }
+            catch{
+                alert("Enter a valid Expression");
+            }
         }
         else if(val=='X')
         {
